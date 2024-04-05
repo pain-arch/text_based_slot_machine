@@ -39,7 +39,7 @@ def bet_amount():
             if MIN_BET <= amount <= MAX_BET:
                 break
             else:
-                print(f"The amount must be between {MIN_BET} - {MAX_BET} ")
+                print(f"The amount must be between ${MIN_BET} - ${MAX_BET} ")
         else:
             print("Invalid ammount, please enter a valid amount")
 
@@ -49,7 +49,7 @@ def bet_amount():
 def main():
     balance = deposit()
     lines = number_of_lines()
-
-    print("you have deposited $", balance , "and you are playing", lines, "lines.")
+    betting_amount = bet_amount()
+    print("you have deposited $", balance , "and you are playing", lines, "lines." "and you are betting $", betting_amount, "per line")
 
 main()                      
