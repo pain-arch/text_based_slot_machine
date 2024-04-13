@@ -21,17 +21,19 @@ def get_slot_machine_spin():
         for _ in range(symbol_count):
             all_symbols.append(symbol)
 
-    colums = []
+    columns = []
     for col in range(cols):
-        colum = []
+        colunm = []
         current_symbols = all_symbols[:]
         for row in range(rows):
             value = random.choice(all_symbols)
             current_symbols.remove(value)
-            colums.append(value)
-        colums.append(colum)          
-    return colums              
+            columns.append(value)
+        columns.append(column)          
+    return columns              
 
+def print_slot_machine(columns):
+    
 
 
 
